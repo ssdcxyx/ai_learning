@@ -5,8 +5,6 @@
 # @description: 
 
 import sys, os
-sys.path.append("..")
-sys.path.append(os.path.abspath("../../"))
 
 
 from flask import Flask, render_template, request, make_response
@@ -19,11 +17,11 @@ import threading
 import jieba
 from annoy import AnnoyIndex
 
-from chatbot import calculate_top_k
-from conf.path_config import boasting_path, matrix_ques_xlnet_save_path, matrix_ques_bert_save_path
-from utils.text_tools import txtRead
-from feature.bert.extract_keras_bert_feature import KerasBertVector
-from feature.xlnet.extract_keras_xlnet_feature import KerasXlnetVector
+from NaturalLanguageProcess.BoastingRobot.chatbot import calculate_top_k
+from NaturalLanguageProcess.BoastingRobot.conf.path_config import boasting_path, matrix_ques_xlnet_save_path, matrix_ques_bert_save_path
+from NaturalLanguageProcess.BoastingRobot.utils.text_tools import txtRead
+from NaturalLanguageProcess.BoastingRobot.feature.bert.extract_keras_bert_feature import KerasBertVector
+from NaturalLanguageProcess.BoastingRobot.feature.xlnet.extract_keras_xlnet_feature import KerasXlnetVector
 
 from tqdm import tqdm
 

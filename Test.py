@@ -1,6 +1,8 @@
 
 
-# import tensorflow as tf
-import numpy as np
+from TimeSerialAnalysis.Test1 import fun1
+from TimeSerialAnalysis.Test2 import fun2
 
-print((4*4*16+16)*120)
+
+fun1()
+fun2()

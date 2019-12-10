@@ -4,10 +4,10 @@
 # @email      : 18379190862@163.com
 # @description:
 
-from feature.xlnet.keras_xlnet import Tokenizer, ATTENTION_TYPE_BI, ATTENTION_TYPE_UNI
-from feature.xlnet.keras_xlnet import load_trained_model_from_checkpoint
+from keras_xlnet import Tokenizer, ATTENTION_TYPE_BI, ATTENTION_TYPE_UNI
+from keras_xlnet import load_trained_model_from_checkpoint
 
-from feature.xlnet.layer_keras import NonMaskingLayer
+from .layer_keras import NonMaskingLayer
 from tensorflow.python.keras.backend import set_session
 from keras.models import Model
 from keras.layers import Add
@@ -16,7 +16,7 @@ import numpy as np
 import codecs
 import os
 
-from feature.xlnet import args
+from . import args
 
 
 # 全局使用，使其可以django、flask、tornado等调用

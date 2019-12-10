@@ -14,10 +14,10 @@ import numpy as np
 import tensorflow as tf
 from keras.layers import Add
 from keras.models import Model
-from feature.bert.keras_bert import load_trained_model_from_checkpoint, Tokenizer
+from keras_bert import load_trained_model_from_checkpoint, Tokenizer
 
-from feature.bert.layer_keras import NonMaskingLayer
-from conf.feature_config import gpu_memory_fraction, config_name, ckpt_name, vocab_file, max_seq_len, layer_indexes
+from .layer_keras import NonMaskingLayer
+from ...conf.feature_config import gpu_memory_fraction, config_name, ckpt_name, vocab_file, max_seq_len, layer_indexes
 
 
 # 全局使用，使其可以django、flask、tornado等调用

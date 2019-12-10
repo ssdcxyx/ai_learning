@@ -4,10 +4,10 @@
 # @email      : 18379190862@163.com
 # @description:
 
-from feature.bert.extract_keras_bert_feature import KerasBertVector
-from feature.xlnet.extract_keras_xlnet_feature import KerasXlnetVector
-from conf.path_config import *
-from utils.text_tools import txtRead
+from NaturalLanguageProcess.BoastingRobot.feature.bert.extract_keras_bert_feature import KerasBertVector
+from NaturalLanguageProcess.BoastingRobot.feature.xlnet.extract_keras_xlnet_feature import KerasXlnetVector
+from NaturalLanguageProcess.BoastingRobot.conf.path_config import *
+from NaturalLanguageProcess.BoastingRobot.utils.text_tools import txtRead
 import numpy as np
 from annoy import AnnoyIndex
 

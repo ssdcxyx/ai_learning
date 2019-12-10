@@ -6,8 +6,8 @@
 # @description: 
 
 
-from utils.json_tools import *
-from conf.path_config import *
+from .utils.json_tools import *
+from .conf.path_config import *
 
 
 if __name__ == '__main__':
